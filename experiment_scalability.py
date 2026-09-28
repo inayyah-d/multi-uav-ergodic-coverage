@@ -1,7 +1,7 @@
 """
 experiment_scalability.py — Scalability Study
 ==============================================
-Varies team size M in {2, 4, 6} for baseline and v2.
+Varies team size M in {2, 3, 4, 6} for baseline and v2.
 Studies whether coordination benefit scales with team size.
 
 Usage:
@@ -17,7 +17,8 @@ OUTDIR = "./outputs"
 os.makedirs(OUTDIR, exist_ok=True)
 
 TEAM_SIZES   = [2, 3, 4, 6]
-ALPHA        = 0.4
+ALPHA        = 0.4   # Fig. 7 / outputs/fig_scalability.png were generated with α=0.4.
+                     # Main results (Table I, Figs. 1–4) use α=0.2 — see simulation_main.py.
 N_RUNS_SCALE = 3
 
 COLORS = {"baseline": "#4C72B0", "v2": "#55A868"}

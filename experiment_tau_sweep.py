@@ -120,7 +120,7 @@ def plot_tau_regret_curves(results):
     For a fixed alpha=0.4, show regret curves for each tau value.
     Helps visualize how update frequency affects convergence speed.
     """
-    alpha = 0.4
+    alpha = 0.4   # outputs/fig_tau_curves.png was generated with α=0.4 (not a paper figure).
     fig, axes = plt.subplots(1, 2, figsize=(12, 4))
     timesteps = np.arange(1, T_FINAL + 1)
 

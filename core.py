@@ -214,7 +214,7 @@ def coordinated_target_v2(phi_bar_m, rho_bar_m, neighbors_empirical, alpha):
 
 def run_simulation(
     mode="baseline",     # "baseline" | "v1" | "v2"
-    alpha=0.4,
+    alpha=0.2,
     seed=42,
     t_final=T_FINAL,
     tau_gp=TAU_GP,
@@ -356,7 +356,7 @@ def run_simulation(
     }
 
 
-def run_multiple(mode, alpha=0.4, n_runs=N_RUNS, tau_gp=TAU_GP, tau_p=TAU_P, n_uavs=N_UAVS):
+def run_multiple(mode, alpha=0.2, n_runs=N_RUNS, tau_gp=TAU_GP, tau_p=TAU_P, n_uavs=N_UAVS):
     """Run N_RUNS seeds and return mean/std for regret, belief_err, overlap, roi_discovery."""
     all_regret, all_belief, all_overlap = [], [], []
     all_roi = []
